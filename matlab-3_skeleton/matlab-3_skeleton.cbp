@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="matlab-3_skeleton" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Playground">
+				<Option output="bin/Playground/matlab-3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Playground/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="UnitTests">
+				<Option output="bin/UnitTests/matlab-3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/UnitTests/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../googletest-gcc/include" />
+				</Compiler>
+				<Linker>
+					<Add library="gmock" />
+					<Add library="pthread" />
+					<Add directory="../../googletest-gcc/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pedantic-errors" />
+			<Add option="-pedantic" />
+			<Add option="-Wextra" />
+			<Add option="-Werror" />
+			<Add option="-std=gnu++14" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="include/matlab.hpp" />
+		<Unit filename="matlab-3.cpp">
+			<Option target="Playground" />
+		</Unit>
+		<Unit filename="src/matlab.cpp" />
+		<Unit filename="test/main_test.cpp">
+			<Option target="UnitTests" />
+		</Unit>
+		<Unit filename="test/test_vector.cpp">
+			<Option target="UnitTests" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

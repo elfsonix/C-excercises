@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1520425299 source:/home/lsriw/Documents/Wittek/mdig-agh-air_inf1_lab_cpp_exercises-d427b5bdfb00/skeletons/matlab-1_skeleton/matlab-1.cpp
+	"matlab.hpp"
+	<cstdlib>
+
+1519661577 /home/lsriw/Documents/Wittek/mdig-agh-air_inf1_lab_cpp_exercises-d427b5bdfb00/skeletons/matlab-1_skeleton/include/matlab.hpp
+	<cstddef>
+
+1520425474 source:/home/lsriw/Documents/Wittek/mdig-agh-air_inf1_lab_cpp_exercises-d427b5bdfb00/skeletons/matlab-1_skeleton/src/matlab.cpp
+	"matlab.hpp"
+	<cstdlib>
+	<iostream>
+
